@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
   // trigger owl carousel
   $("#slider1").owlCarousel({
     loop: true,
@@ -52,7 +52,7 @@ $(function () {
         nav: false,
         items: 1.3,
         dots: true,
-        margin: 10,
+        margin: 10
       },
       768: {
         items: 2
@@ -63,14 +63,21 @@ $(function () {
     }
   });
 
+  $("#slider4").owlCarousel({
+    dots: false,
+    items: 3,
+    nav: true,
+    loop: true
+  });
+
   // burgor button
-  $(".top-header .burgor").on("click", function () {
+  $(".top-header .burgor").on("click", function() {
     console.log("ok");
     $(".navbar").slideToggle(500);
   });
 
   // add class active on link in navbar when click on it
-  $(".navbar li, .unshilled-content ul li").on("click", function () {
+  $(".navbar li").on("click", function() {
     $(this)
       .addClass("active")
       .siblings()
@@ -78,16 +85,18 @@ $(function () {
   });
 
   // add class active on link in navbar when click on it
-  $(".unshilled-content ul li").on("click", function () {
+  $(".unshilled-content ul li").on("click", function() {
     $(this)
       .addClass("active")
+      .parent(".owl-item")
       .siblings()
+      .find("li")
       .removeClass("active");
   });
 
   // show-more button
   if ($(".show-more button").hasClass("show")) {
-    $(".show-more button").on("click", function () {
+    $(".show-more button").on("click", function() {
       $("td").fadeIn(400);
       $(this).hide();
     });
@@ -95,19 +104,21 @@ $(function () {
 
   // animate the background on hover
   $(".box .box-link").hover(
-    function () {
+    function() {
       $(this)
         .find(".light-background")
-        .animate({
+        .animate(
+          {
             width: "100%"
           },
           1000
         );
     },
-    function () {
+    function() {
       $(this)
         .find(".light-background")
-        .animate({
+        .animate(
+          {
             width: "28%"
           },
           1000

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Rahmer</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
@@ -17,7 +17,7 @@
 
 <body>
   <!-- Start Header -->
-  <header>
+  <header class="landing">
     <div class="container">
       <div class="top-header">
         <div class="logo">
@@ -84,44 +84,21 @@
   <!-- End Header -->
 
   <!-- Start showcase -->
-  <section class="showcase">
+  <section class="showcase landing">
     <div class="container">
       <div class="row">
+        <div class="col-md-6 col-lg-5 col-xs-12">
+          <div class="showcase-image">
+            <img src="imgs/landing/team.png" alt="" />
+          </div>
+        </div>
         <div class="col-md-6 col-lg-7 col-xs-12">
           <div class="showcase-details">
             <h1 class="x-large">
-              <span>RAHMER</span> Zeitarbeit - Wir sind Job!
+                Warum <br>
+                <span>RAHMER</span> Zeitarbeit?
             </h1>
-            <form class="form">
-              <i class="icon-zoom"></i>
-              <input type="search" name="search" placeholder="Job Wunsch" />
-              <input type="submit" value="Jetzt Job finden" class="btn btn-primary" />
-            </form>
-            <ul class="showcase-tags">
-              <li>
-                <a href="#">
-                  <img class="d-none d-lg-block" src="imgs/svg/label.svg" alt="" />
-                  Fair price
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img class="d-none d-lg-block" src="imgs/svg/a-star.svg" alt="" />
-                  Customer recommended
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img class="d-none d-lg-block" src="imgs/svg/users.svg" alt="" />
-                  Motivated teams
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-5 col-xs-12">
-          <div class="showcase-image">
-            <img src="imgs/woman.png" alt="" />
+            <p class="text">Ihr Unternehmen muss schnell und flexibel reagieren? Wir von RAHMER Zeitarbeit stehen Ihnen zur Seite – schnell, professionell, fair!</p>
           </div>
         </div>
       </div>
@@ -130,13 +107,13 @@
   <!-- End showcase -->
 
   <!-- Start Willkommen -->
-  <section class="willkommen">
+  <section class="willkommen landing">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-xs-12">
           <h2 class="willkommen-title">
-            Willkommen bei <br />
-            <span>RAHMER</span> Zeitarbeit
+              Warum<br />
+            <span>RAHMER</span> Zeitarbeit?
           </h2>
         </div>
         <div class="col-md-6 col-xs-12">
@@ -145,186 +122,74 @@
             neuen Mitarbeiter*innen. Wir bieten Arbeitsplätze in
             verschiedensten Branchen in ganz Deutschland an - von Industrie
             und Handwerk über Reinigung zu Montage und Logistik, in der Pflege
-            und im kaufmännischen Bereich. Wir sind in der Zeitarbeit, aber
-            auch in der Direktvermittlung in Unternehmen tätig. Interesse
-            geweckt? Durchforsten Sie unsere Jobbörse oder schreiben Sie uns
-            direkt eine Nachricht, wir finden den richtigen Job für Sie! Wir
-            freuen auf Sie!
+            und im kaufmännischen Bereich. Wir sind in der Zeitarbeit.
           </p>
         </div>
       </div>
+      <hr>
     </div>
   </section>
   <!-- End Willkommen -->
 
-  <!-- Start Unsere -->
-  <section class="unsere">
+  <!-- Start Nutzen -->
+  <section class="nutzen">
     <div class="container">
-      <h2>Unsere aktuellen Jobangebote</h2>
-      <table class="table table-bordered">
-        <tbody>
-          <tr>
-            <td>
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/delivery.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/car-front.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/cleaner.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/Factory.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/chair.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/stethoscope.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/tools.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/heart.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-            <td class="hide-xs">
-              <div class="cell">
-                <img class="cell-icon" src="imgs/svg/high-five.svg" alt="" />
-                <div class="cell-info">
-                  <p class="cell-title">
-                    <span>Anlagenmechaniker</span> (m/w/d)
-                  </p>
-                  <span class="cell-vollzeit">Vollzeit</span>
-                  <span class="cell-site"><img src="imgs/svg/pin.svg" alt="" /> Nürnberg</span>
-                </div>
-                <button class="btn">
-                  link to job
-                  <i class="icon-right-arrow"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="show-more">
-        <button class="btn show-more-btn show">
-          Show 6 More
-          <i class="icon-right-arrow"></i>
-          <div class="light-background"></div>
-        </button>
+      <h2 class="nutzen-title">Nutzen Sie Ihren Wettbewerbsvorteil</h2>
+      <p class="nutzen-desc">Wir verfügen über langjährige Erfahrung im Bereich der Arbeitnehmerüberlassung und Arbeitsvermittlung. Wir unterstützen Sie rundum. Das beginnt mit der Analyse des erforderlichen Profils und endet mit der zielgerichteten Auswahl geeigneter Mitarbeiter. Natürlich erhalten Sie Support bei der Eingliederung der Mitarbeiter in Ihr Team vor Ort.</p>
+      <div class="nutzen-content">
+        <div class="nutzen-left float-left">
+          <div>
+            <img src="imgs/landing/nutzen/home.svg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam!
+            </p>
+          </div>
+          <div>
+            <img src="imgs/landing/nutzen/new-construction.svg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam! iste mollitia quo soluta.
+            </p>
+          </div>
+          <div>
+            <img src="imgs/landing/nutzen/soft-drink.svg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam!
+            </p>
+          </div>
+          <div>
+            <img src="imgs/landing/nutzen/pasta.svg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae architecto hic ea omnis velit qui aliquid? Harum, earum veritatis?
+            </p>
+          </div>
+          <div>
+            <img src="imgs/landing/nutzen/organic.svg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo modi molestias tenetur quaerat perspiciatis voluptatem sed officiis! Doloribus reiciendis quis consequuntur dicta laboriosam soluta illum corrupti. Ipsam, sunt quas tenetur quaerat perspiciatis.
+            </p>
+          </div>        
+        </div>
+        <div class="nutzen-right float-right">
+            <div>
+              <img src="imgs/landing/nutzen/juice.svg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nam rem libero nobis nemo vitae odio temporibus neque hic adipisci vel, aperiam tenetur ipsum voluptates sapiente culpa accusamus atque! Molestias!
+              </p>
+            </div> 
+            <div>
+              <img src="imgs/landing/nutzen/wallet.svg" alt="">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque, corrupti minima officiis ea alias praesentium quas sit quis vitae accusamus voluptas exercitationem suscipit cum tenetur, sapiente consectetur temporibus qui perspiciatis. Facere eos voluptates fuga nihil sit totam vitae eaque!
+              </p>
+            </div> 
+            <div>
+              <img src="imgs/landing/nutzen/volume.svg" alt="">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque, corrupti minima officiis ea alias praesentium quas sit quis vitae accusamus voluptas exercitationem suscipit cum tenetur, sapiente consectetur temporibus qui perspiciatis. Facere eos voluptates fuga nihil sit totam vitae eaque!
+              </p>
+            </div> 
+            <div>
+              <img src="imgs/landing/nutzen/trolley.svg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, officiis! Est suscipit, iste ullam veniam voluptatem, modi ut temporibus velit iusto libero?
+              </p>
+            </div> 
+        </div>
       </div>
     </div>
   </section>
-  <!-- End Unsere -->
+  <!-- End Nutzen -->
 
   <!-- Start Bewerber -->
   <section class="bewerber">
@@ -406,6 +271,60 @@
   </section>
   <!-- End Unternehmen -->
 
+  <!-- Start Features -->
+  <section class="features landing">
+      <div class="container">
+        <div class="feat">
+          <h2>
+            Ihre Vorteile als <br />
+            Kunde
+          </h2>
+          <p>
+            Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+            Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+            Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+            unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+            mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+            ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+            Renten.
+          </p>
+        </div>
+  
+        <div class="feat">
+          <h2>
+            Verantwortvolle <br />
+            Zeitarbeit
+          </h2>
+          <p>
+              Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+              Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+              Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+              unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+              mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+              ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+              Renten.
+          </p>
+        </div>
+  
+        <div class="feat">
+          <h2>
+            Ihre Vorteile als <br />
+            Mitarbeiter
+          </h2>
+          <p>
+              Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+              Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+              Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+              unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+              mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+              ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+              Renten.
+          </p>
+        </div>
+      </div>
+  </section>
+  <!-- End Features -->
+
   <!-- Start Slider -->
   <section class="slider">
     <div class="container">
@@ -457,7 +376,7 @@
         <div class="unshilled-img">
           <img src="imgs/mancleaning.png" alt="" />
         </div>
-        <ul class="d-none d-md-block show-tablet">
+        <ul>
           <li class="active"><a href="#!"> craftspeople</a></li>
           <li><a href="#!"> office</a></li>
           <li><a href="#!"> care/nursing</a></li>
@@ -475,25 +394,6 @@
           <li><a href="#!"> drivers</a></li>
           <li><a href="#!"> others</a></li>
         </ul>
-        <div class="d-block d-md-none mobile-show">
-          <ul>
-            <div class="owl-carousel owl-theme" id="slider4">
-              <li class="active"><a href="#!"> craftpeople</a></li>
-              <li><a href="#!"> office</a></li>
-              <li><a href="#!"> nursing</a></li>
-              <li><a href="#!"> cleaning</a></li>
-              <li>
-                <a href="#!"> logistics </a>
-              </li>
-              <li><a href="#!"> developing</a></li>
-              <li>
-                <a href="#!">
-                  electronics</a>
-              </li>
-              <li><a href="#!"> drivers</a></li>
-            </div>
-            </ul>
-        </div>
         <div class="unshilled-slider">
           <div class="unshilled-slider-title">
             <h2>
@@ -637,63 +537,7 @@
   </section>
   <!-- End Latest News -->
 
-  <!-- Start Features -->
-  <section class="features">
-    <div class="container">
-      <div class="feat">
-        <h2>
-          Ihre Vorteile als <br />
-          Kunde
-        </h2>
-        <p>
-          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-          Renten-, Kranken-, Arbeitund Pfleerung, Lotzahlung im Kranksfall
-          sowie gesichen Kündiz. Hinzu kommen ein leistutes Gehalt, Übegleich,
-          Urlaubs- und Wensgeld. Hinzu kommen ein leinchtes Gehalt, Übgleich,
-          Urlaubs- und Weisgeld.
-        </p>
-      </div>
-
-      <div class="feat">
-        <h2>
-          Verantwortvolle <br />
-          Zeitarbeit
-        </h2>
-        <p>
-          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-          Renten-, Kranken-, Arbeitund Pfleerung, Lotzahlung im Kranksfall
-          sowie gesichen Kündiz.
-        </p>
-      </div>
-
-      <div class="feat">
-        <h2>
-          Ihre Vorteile als <br />
-          Mitarbeiter
-        </h2>
-        <p>
-          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-          Renten.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- End Features -->
+  
 
   <!-- Start Footer -->
   <footer>
