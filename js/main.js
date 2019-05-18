@@ -65,9 +65,9 @@ $(function() {
 
   $("#slider4").owlCarousel({
     dots: false,
-    items: 3,
     nav: true,
-    loop: true
+    loop: true,
+    margin: 10
   });
 
   // burgor button
@@ -85,12 +85,13 @@ $(function() {
   });
 
   // add class active on link in navbar when click on it
-  $(".unshilled-content ul li").on("click", function() {
+  $(".unshilled-content .mobile-show div a").on("click", function() {
     $(this)
+      .parent()
       .addClass("active")
       .parent(".owl-item")
       .siblings()
-      .find("li")
+      .find(".item")
       .removeClass("active");
   });
 

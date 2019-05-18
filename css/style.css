@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none !important;
 }
 
 body {
@@ -31,7 +32,7 @@ a {
 @media (min-width: 992px) {
   .container {
     max-width: 1024px;
-    padding: 0;
+    padding: 0 10px;
   }
 }
 
@@ -1285,23 +1286,56 @@ header nav .navbar li a:hover {
   .unshilled .unshilled-content {
     min-height: 500px;
   }
+  .unshilled .unshilled-content .mobile-show {
+    height: 60px;
+    padding: 0;
+    top: -60px;
+    left: 0;
+    position: absolute;
+    background-color: #d4007a;
+    width: 100%;
+  }
+  .unshilled .unshilled-content .mobile-show div {
+    line-height: 60px;
+    text-align: center;
+  }
+  .unshilled .unshilled-content .mobile-show div.item.active a {
+    border-bottom: 4px solid #fff;
+    opacity: 1;
+  }
+  .unshilled .unshilled-content .mobile-show div a {
+    padding: 0;
+    padding-bottom: 17px;
+    opacity: 0.7;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border-bottom: 4px solid transparent;
+  }
   .unshilled .unshilled-content .mobile-show .owl-theme .owl-nav {
     position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+  .unshilled .unshilled-content .mobile-show .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-prev {
     display: none;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-next {
     position: relative;
+    outline: none !important;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-next span {
-    right: -350px;
-    position: absolute;
-    top: -100px;
     font-size: 50px;
     color: #fff;
-    z-index: 10;
     cursor: pointer;
+    position: relative;
+    top: -8px;
   }
 }
 
@@ -1331,31 +1365,8 @@ header nav .navbar li a:hover {
   }
 }
 
-@media (max-width: 767px) {
-  .unshilled .unshilled-content ul {
-    padding: 0;
-    top: -60px;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .unshilled .unshilled-content ul li {
   text-align: right;
-}
-
-@media (max-width: 767px) {
-  .unshilled .unshilled-content ul li {
-    line-height: 60px;
-    padding: 0 20px;
-    text-align: center;
-  }
-  .unshilled .unshilled-content ul li.active a {
-    border-bottom: 4px solid #fff;
-    opacity: 1;
-  }
 }
 
 .unshilled .unshilled-content ul li a {
@@ -1367,14 +1378,6 @@ header nav .navbar li a:hover {
   padding: 22px 0;
   display: inline-block;
   text-decoration: none;
-}
-
-@media (max-width: 767px) {
-  .unshilled .unshilled-content ul li a {
-    padding: 0;
-    padding-bottom: 20px;
-    opacity: 0.7;
-  }
 }
 
 .unshilled .unshilled-content ul li:after {
