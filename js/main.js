@@ -10,6 +10,7 @@ $(function() {
     responsive: {
       0: {
         items: 1.3,
+        dotsEach: true,
         dots: true
       },
       768: {
@@ -31,6 +32,7 @@ $(function() {
       0: {
         items: 1.2,
         dots: true,
+        dotsEach: true,
         nav: false
       },
       768: {
@@ -52,6 +54,7 @@ $(function() {
         nav: false,
         items: 1.3,
         dots: true,
+        dotsEach: true,
         margin: 10
       },
       768: {
@@ -68,6 +71,27 @@ $(function() {
     nav: true,
     loop: true,
     margin: 10
+  });
+
+  $("#slider-landing-1").owlCarousel({
+    loop: true,
+    dots: false,
+    nav: false,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1.3,
+        dots: true,
+        dotsEach: true,
+        margin: 10
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
   });
 
   // burgor button
