@@ -8,6 +8,22 @@ body {
   font-family: "Montserrat";
 }
 
+body textarea:focus,
+body textarea.form-control:focus,
+body input.form-control:focus,
+body input[type="text"]:focus,
+body input[type="password"]:focus,
+body input[type="email"]:focus,
+body input[type="number"]:focus,
+body [type="text"].form-control:focus,
+body [type="password"].form-control:focus,
+body [type="email"].form-control:focus,
+body [type="tel"].form-control:focus,
+body [contenteditable].form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
