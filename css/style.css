@@ -3011,6 +3011,15 @@ header.landing {
   line-height: 58px;
 }
 
+@media (max-width: 767px) {
+  .showcase.overview .showcase-details h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 33px;
+    margin-bottom: 23px;
+  }
+}
+
 .showcase.overview .showcase-details .text {
   margin-bottom: 50px;
   width: 90%;
@@ -3031,8 +3040,7 @@ header.landing {
 
 @media (max-width: 767px) {
   .showcase.overview .showcase-details button {
-    width: 90%;
-    margin-top: 10px;
+    display: none;
   }
 }
 
@@ -3047,6 +3055,12 @@ header.landing {
 .links.overview td {
   text-align: left;
   padding: 34px 0 34px 30px;
+}
+
+@media (max-width: 767px) {
+  .links.overview td {
+    padding: 18px 0 18px 20px;
+  }
 }
 
 .links.overview td button {
@@ -3082,6 +3096,12 @@ header.landing {
   transition: all 0.4s ease-in-out;
 }
 
+@media (max-width: 767px) {
+  .links.overview td button i {
+    font-size: 8px;
+  }
+}
+
 .links.overview td:hover i {
   color: #d4007a;
 }
@@ -3092,5 +3112,17 @@ header.landing {
 
 .links.overview td:hover button:before {
   background-color: #ffedf7;
+}
+
+@media (max-width: 767px) {
+  .contact.overview {
+    padding-top: 55px;
+  }
+  .contact.overview h2 {
+    margin-bottom: 20px;
+  }
+  .contact.overview p {
+    margin-bottom: 32px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
