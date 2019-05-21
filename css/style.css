@@ -130,9 +130,6 @@ header .top-header .logo {
 }
 
 header .top-header .burgor {
-  position: absolute;
-  top: 33px;
-  right: 10px;
   display: none;
   cursor: pointer;
 }
@@ -148,7 +145,7 @@ header .top-header .burgor span {
   height: 2px;
   background-color: #4a4a4a;
   width: 22px;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 header .top-header .header-info {
@@ -179,9 +176,6 @@ header .top-header .header-info {
     -webkit-box-flex: 5;
         -ms-flex: 5;
             flex: 5;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
@@ -198,7 +192,7 @@ header .top-header .header-info .call i {
 
 @media (max-width: 767px) {
   header .top-header .header-info .call i {
-    margin-right: 10px;
+    font-size: 20px;
   }
 }
 
@@ -263,7 +257,7 @@ header .top-header .header-info .search {
 
 @media (max-width: 767px) {
   header .top-header .header-info .search {
-    width: 20px;
+    width: 25px;
   }
 }
 
@@ -391,6 +385,12 @@ header nav .navbar li a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase .showcase-details {
+    padding-bottom: 0;
+  }
+}
+
 .showcase .showcase-details .x-large {
   font-size: 48px;
   line-height: 58px;
@@ -499,12 +499,26 @@ header nav .navbar li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase .showcase-details .showcase-tags {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .showcase .showcase-details .showcase-tags li {
+    padding-bottom: 20px;
+  }
+  .showcase .showcase-details .showcase-tags li:after {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .showcase .showcase-details .showcase-tags img {
     display: inline-block !important;
   }
@@ -1225,6 +1239,22 @@ header nav .navbar li a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider .owl-theme .owl-dots {
+    margin-top: 60px !important;
+  }
+  .slider .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background-color: #c2c2c2;
+  }
+  .slider .owl-theme .owl-dots .owl-dot.active span,
+  .slider .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #d4007a;
+  }
+}
+
 .slider .item .info {
   width: 80%;
   background-color: #fff;
@@ -1342,18 +1372,28 @@ header nav .navbar li a:hover {
     border-bottom: 4px solid transparent;
   }
   .unshilled .unshilled-content .mobile-show .owl-theme .owl-nav {
-    position: absolute;
-    top: -10px;
-    right: 10px;
+    position: relative;
   }
   .unshilled .unshilled-content .mobile-show .owl-theme .owl-nav [class*="owl-"]:hover {
     background: none;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-prev {
-    display: none;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    outline: none !important;
+  }
+  .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: -8px;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-next {
-    position: relative;
+    position: absolute;
+    top: -70px;
+    right: 0;
     outline: none !important;
   }
   .unshilled .unshilled-content .owl-carousel .owl-nav button.owl-next span {
@@ -1362,6 +1402,10 @@ header nav .navbar li a:hover {
     cursor: pointer;
     position: relative;
     top: -8px;
+  }
+  .unshilled .unshilled-content .owl-next.disabled,
+  .unshilled .unshilled-content .owl-prev.disabled {
+    display: none !important;
   }
 }
 
@@ -1908,6 +1952,22 @@ header nav .navbar li a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .latest .boxes .owl-theme .owl-dots {
+    margin-top: 60px !important;
+  }
+  .latest .boxes .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    background-color: #c2c2c2;
+  }
+  .latest .boxes .owl-theme .owl-dots .owl-dot.active span,
+  .latest .boxes .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #d4007a;
+  }
+}
+
 .latest .boxes .owl-theme .owl-nav [class*="owl-"] {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2324,7 +2384,6 @@ header.landing {
 @media (max-width: 767px) {
   .showcase.landing {
     border-top: 1px solid #f0f0f0;
-    overflow: visible;
   }
 }
 
@@ -2597,6 +2656,12 @@ header.landing {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .features.landing {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 767px) {
   .features.landing .feat:first-child h2 {
     margin-top: 110px;
@@ -2815,6 +2880,10 @@ header.landing {
 .contact .info .form button i {
   font-size: 12px;
   margin-left: 5px;
+}
+
+.contact .details {
+  overflow: hidden;
 }
 
 .contact .details h2 {

@@ -11,10 +11,16 @@ $(function() {
       0: {
         items: 1.3,
         dotsEach: true,
-        dots: true
+        dots: true,
+        nav: false,
+        margin: 20,
+        stagePadding: 10
       },
       768: {
-        items: 2
+        items: 2,
+        dots: true,
+        dotsEach: true,
+        nav: false
       },
       992: {
         items: 3
@@ -58,7 +64,11 @@ $(function() {
         margin: 10
       },
       768: {
-        items: 2
+        items: 2,
+        nav: false,
+        dots: true,
+        dotsEach: true,
+        margin: 20
       },
       992: {
         items: 2
@@ -69,8 +79,17 @@ $(function() {
   $("#slider4").owlCarousel({
     dots: false,
     nav: true,
-    loop: true,
-    margin: 10
+    loop: false,
+    stagePadding: 20,
+    navRewind: false,
+    responsive: {
+      0: {
+        items: 3
+      },
+      500: {
+        items: 4
+      }
+    }
   });
 
   $("#slider-landing-1").owlCarousel({
