@@ -2373,6 +2373,12 @@ footer .navbar li a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
 /* landing page */
 header.landing {
   background-color: #fff;
@@ -3020,9 +3026,24 @@ header.landing {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase.overview .showcase-details h1 {
+    font-size: 30px;
+    margin-top: 79px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+
 .showcase.overview .showcase-details .text {
   margin-bottom: 50px;
   width: 90%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .showcase.overview .showcase-details .text {
+    margin-bottom: 25px;
+  }
 }
 
 .showcase.overview .showcase-details button {
@@ -3053,7 +3074,6 @@ header.landing {
 }
 
 .links.overview td {
-  text-align: left;
   padding: 34px 0 34px 30px;
 }
 
