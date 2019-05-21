@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Landing Page</title>
+  <title>Overview Page</title>
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
@@ -17,7 +17,7 @@
 
 <body>
   <!-- Start Header -->
-  <header class="landing">
+  <header class="landing overview">
     <div class="container">
       <div class="top-header">
         <div class="logo">
@@ -71,8 +71,8 @@
       <nav>
         <ul class="navbar">
           <li><a href="index.html">Home</a></li>
-          <li class="active"><a href="landing.html">Jobbörse</a></li>
-          <li><a href="overview.html">Bewerber</a></li>
+          <li><a href="landing.html">Jobbörse</a></li>
+          <li class="active"><a href="overview.html">Bewerber</a></li>
           <li class="d-md-none d-xl-block"><a href="#">Unternehmen</a></li>
           <li class="d-md-none d-lg-block"><a href="#">Standorte</a></li>
           <li><a href="#">Über Uns</a></li>
@@ -85,21 +85,25 @@
   <!-- End Header -->
 
   <!-- Start showcase -->
-  <section class="showcase landing">
+  <section class="showcase overview landing">
     <div class="container">
       <div class="row">
         <div class="col-md-5 col-lg-5 col-xs-12">
           <div class="showcase-image">
-            <img src="imgs/landing/team.png" alt="" />
+            <img src="imgs/overview/showcase.png" alt="" />
           </div>
         </div>
         <div class="col-md-7 col-lg-7 col-xs-12">
           <div class="showcase-details">
             <h1 class="x-large">
-                Warum <br>
-                <span>RAHMER</span> Zeitarbeit?
+              Für <br>
+              Unternehmen
             </h1>
-            <p class="text">Ihr Unternehmen muss schnell und flexibel reagieren? Wir von RAHMER Zeitarbeit stehen Ihnen zur Seite – schnell, professionell, fair!</p>
+            <p class="text">Ihr Unternehmen muss schnell und flexibel reagieren? Wir von RAHMER Zeitarbeit stehen Ihnen zur Seite – schnell professionell, fair und flexibel reagieren!</p>
+            <button class="btn">
+              Jetzt gleich anfragen!
+              <i class="icon-right-arrow"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -107,93 +111,79 @@
   </section>
   <!-- End showcase -->
 
-  <!-- Start Willkommen -->
-  <section class="willkommen landing">
+  <!-- Start Links -->
+  <section class="links overview">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-xs-12">
-          <h2 class="willkommen-title">
-              Warum<br />
-            <span>RAHMER</span> Zeitarbeit?
-          </h2>
-        </div>
-        <div class="col-md-6 col-xs-12">
-          <p class="willkommen-desc">
-            Wir sind Job - denn wir sind immer auf der Suche nach motivierten
-            neuen Mitarbeiter*innen. Wir bieten Arbeitsplätze in
-            verschiedensten Branchen in ganz Deutschland an - von Industrie
-            und Handwerk über Reinigung zu Montage und Logistik, in der Pflege
-            und im kaufmännischen Bereich. Wir sind in der Zeitarbeit.
-          </p>
-        </div>
-      </div>
-      <hr>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td>
+              <button class="btn">
+                Branchenlösungen
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Warum Zeitarbeit
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Arbeitnehmeüberlassung
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>       
+          </tr>
+          <tr>
+            <td>
+              <button class="btn">
+                Personalvermittlung
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Outsourcing
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Onsite Management
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>       
+          </tr>
+          <tr>
+            <td>
+              <button class="btn">
+                Master Vendor Konzept
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Personalanfrage
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn">
+                Referenzen
+                <i class="icon-right-arrow"></i>
+              </button>
+            </td>       
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
-  <!-- End Willkommen -->
-
-  <!-- Start Nutzen -->
-  <section class="nutzen">
-    <div class="container">
-      <h2 class="nutzen-title">Nutzen Sie Ihren Wettbewerbsvorteil</h2>
-      <p class="nutzen-desc">Wir verfügen über langjährige Erfahrung im Bereich der Arbeitnehmerüberlassung und Arbeitsvermittlung. Wir unterstützen Sie rundum. Das beginnt mit der Analyse des erforderlichen Profils und endet mit der zielgerichteten Auswahl geeigneter Mitarbeiter. Natürlich erhalten Sie Support bei der Eingliederung der Mitarbeiter in Ihr Team vor Ort.</p>
-      <div class="nutzen-content">
-        <div class="nutzen-left float-left">
-          <div>
-            <img src="imgs/landing/nutzen/home.svg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam!
-            </p>
-          </div>
-          <div>
-            <img src="imgs/landing/nutzen/new-construction.svg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam! iste mollitia quo soluta.
-            </p>
-          </div>
-          <div>
-            <img src="imgs/landing/nutzen/soft-drink.svg" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor asperiores unde placeat iste mollitia quo soluta, tempore itaque sit quam!
-            </p>
-          </div>
-          <div>
-            <img src="imgs/landing/nutzen/pasta.svg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores vitae architecto hic ea omnis velit qui aliquid? Harum, earum veritatis?
-            </p>
-          </div>
-          <div>
-            <img src="imgs/landing/nutzen/organic.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo modi molestias tenetur quaerat perspiciatis voluptatem sed officiis! Doloribus reiciendis quis consequuntur dicta laboriosam soluta illum corrupti. Ipsam, sunt quas tenetur quaerat perspiciatis.
-            </p>
-          </div>        
-        </div>
-        <div class="nutzen-right float-right">
-            <div>
-              <img src="imgs/landing/nutzen/juice.svg" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nam rem libero nobis nemo vitae odio temporibus neque hic adipisci vel, aperiam tenetur ipsum voluptates sapiente culpa accusamus atque! Molestias!
-              </p>
-            </div> 
-            <div>
-              <img src="imgs/landing/nutzen/wallet.svg" alt="">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque, corrupti minima officiis ea alias praesentium quas sit quis vitae accusamus voluptas exercitationem suscipit cum tenetur, sapiente consectetur temporibus qui perspiciatis. Facere eos voluptates fuga nihil sit totam vitae eaque!
-              </p>
-            </div> 
-            <div>
-              <img src="imgs/landing/nutzen/volume.svg" alt="">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque, corrupti minima officiis ea alias praesentium quas sit quis vitae accusamus voluptas exercitationem suscipit cum tenetur, sapiente consectetur temporibus qui perspiciatis. Facere eos voluptates fuga nihil sit totam vitae eaque!
-              </p>
-            </div> 
-            <div>
-              <img src="imgs/landing/nutzen/trolley.svg" alt="">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, officiis! Est suscipit, iste ullam veniam voluptatem, modi ut temporibus velit iusto libero?
-              </p>
-            </div> 
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Nutzen -->
+  <!-- End Links -->
 
   <!-- Start Bewerber -->
-  <section class="bewerber landing">
+  <section class="bewerber landing overview">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-xs-12">
@@ -233,7 +223,7 @@
   <!-- End Bewerber -->
 
   <!-- Start Unternehmen -->
-  <section class="unternehmen landing">
+  <section class="unternehmen landing overview">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-xs-12 order-2 order-md-1 ">
@@ -273,7 +263,7 @@
   <!-- End Unternehmen -->
 
   <!-- Start Features -->
-  <section class="features landing">
+  <section class="features landing overview">
       <div class="container">
         <div class="feat">
           <h2>
@@ -326,69 +316,8 @@
   </section>
   <!-- End Features -->
 
-  <!-- Start Slider -->
-  <section class="slider landing">
-    <div class="container">
-      <div class="owl-carousel owl-theme" id="slider-landing-1">
-        <div class="item">
-          <div class="item-image">
-            <img src="imgs/landing/slider/01.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Arbeitnehmerüberlassung</h3>
-            <button class="btn btn-bg-light">
-              learn more
-              <i class="icon-right-arrow"></i>
-              <div class="light-background"></div>
-            </button>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="imgs/landing/slider/02.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Personalvermittlung</h3>
-            <button class="btn btn-bg-light">
-              learn more
-              <i class="icon-right-arrow"></i>
-              <div class="light-background"></div>
-            </button>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="imgs/landing/slider/03.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Outsourcing</h3>
-            <button class="btn btn-bg-light">
-              learn more
-              <i class="icon-right-arrow"></i>
-              <div class="light-background"></div>
-            </button>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image">
-            <img src="imgs/landing/slider/04.png" alt="" />
-          </div>
-          <div class="info">
-            <h3>Master-Vendor-Konzept</h3>
-            <button class="btn btn-bg-light">
-              learn more
-              <i class="icon-right-arrow"></i>
-              <div class="light-background"></div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Slider --> 
-
   <!-- Start Contact -->
-  <section class="contact">
+  <section class="contact overview">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
@@ -476,7 +405,7 @@
   <!-- End Contact -->
 
   <!-- Start Footer -->
-  <footer class="landing">
+  <footer class="landing overview">
     <div class="container">
       <div class="footer-left">
         <h2><span>RAHMER</span> Zeitarbeit</h2>

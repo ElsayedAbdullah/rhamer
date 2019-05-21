@@ -1471,6 +1471,7 @@ header nav .navbar li a:hover {
   background-color: #fff;
   min-height: 280px;
   padding-right: 60px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -3001,3 +3002,95 @@ header.landing {
     padding-top: 55px;
   }
 }
+
+/* Overview page */
+.showcase.overview .showcase-details h1 {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.showcase.overview .showcase-details .text {
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.showcase.overview .showcase-details button {
+  padding: 17px 40px;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #d4007a;
+  color: #fff;
+  outline: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .showcase.overview .showcase-details button {
+    width: 90%;
+    margin-top: 10px;
+  }
+}
+
+.showcase.overview .showcase-details button i {
+  font-size: 10px;
+}
+
+.showcase.overview .showcase-details button:hover {
+  background-color: #ee0089;
+}
+
+.links.overview td {
+  text-align: left;
+  padding: 34px 0 34px 30px;
+}
+
+.links.overview td button {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  color: #303030;
+  outline: none !important;
+  padding-left: 15px;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.links.overview td button:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 28%;
+  height: 100%;
+  background-color: #e8e8e8;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.links.overview td button i {
+  font-size: 10px;
+  color: #c2c2c0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.links.overview td:hover i {
+  color: #d4007a;
+}
+
+.links.overview td:hover button {
+  color: #d4007a;
+}
+
+.links.overview td:hover button:before {
+  background-color: #ffedf7;
+}
+/*# sourceMappingURL=style.css.map */

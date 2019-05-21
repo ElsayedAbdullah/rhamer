@@ -3,7 +3,6 @@ $(function() {
   $("#slider1").owlCarousel({
     loop: true,
     margin: 40,
-    nav: true,
     stagePadding: 20,
     dots: false,
     // autoplay: true,
@@ -23,14 +22,15 @@ $(function() {
         nav: false
       },
       992: {
-        items: 3
+        items: 3,
+        nav: true
       }
     }
   });
 
   $("#slider2").owlCarousel({
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     nav: true,
     dots: false,
     margin: 10,
