@@ -30,7 +30,6 @@ $(function() {
 
   $("#slider2").owlCarousel({
     loop: true,
-    autoplay: true,
     nav: true,
     dots: false,
     margin: 10,
@@ -81,13 +80,14 @@ $(function() {
     nav: true,
     loop: false,
     stagePadding: 20,
+    margin: 15,
     navRewind: false,
     responsive: {
       0: {
         items: 3
       },
       500: {
-        items: 4
+        items: 3
       }
     }
   });
@@ -115,8 +115,19 @@ $(function() {
 
   // burgor button
   $(".top-header .burgor").on("click", function() {
-    console.log("ok");
     $(".navbar").slideToggle(500);
+  });
+
+  // burgor button change shape to x button
+  $(function() {
+    $(".the-button").on("click", function() {
+      $(this).toggleClass("transformed");
+    });
+  });
+
+  // to avoid close dropdown when click inside it
+  $(document).on("click", ".dropdown-menu", function(e) {
+    e.stopPropagation();
   });
 
   // add class active on link in navbar when click on it
@@ -169,4 +180,33 @@ $(function() {
         );
     }
   );
+
+  // dropdown
+  $(".navbar-nav li .dropdown-toggle").on("click", function() {
+    $("header").toggleClass("background-gray");
+    $(".navbar").toggleClass("background-gray");
+  });
+  /*
+  $(".landing .navbar-nav li, .overview .navbar-nav li").on(
+    "click",
+    function() {
+      $(".navbar").css("background-color", "#fff");
+    }
+  );
+  */
+
+  /*
+  $(".navbar-nav .dropdown").hover(
+    function() {
+      $(".dropdown-menu").slideToggle(400);
+      $("header").css("background-color", "#fff");
+      $(".navbar").css("background-color", "#fff");
+    },
+    function() {
+      $(".dropdown-menu").slideToggle(400);
+      $("header").css("background-color", "#fff");
+      $(".navbar").css("background-color", "#fff");
+    }
+  );
+  */
 });

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/owl.carousel.css" />
   <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/fontello.css" />
@@ -17,11 +18,13 @@
 
 <body>
   <!-- Start Header -->
-  <header>
+  <header class="background-gray">
     <div class="container">
       <div class="top-header">
         <div class="logo">
-          <img src="imgs/rahmer_logo.png" alt="" />
+          <a href="index.html">
+            <img src="imgs/rahmer_logo.png" alt="" />
+          </a>
         </div>
         <div class="header-info">
           <div class="call">
@@ -59,29 +62,118 @@
             <i class="icon-zoom"></i>
             <input type="search" placeholder="Suche" />
           </div>
-          <div class="burgor">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="the-button burgor">
+            <span class="the-line"></span>
+            <span class="the-line"></span>
+            <span class="the-line"></span>
           </div>
         </div>
-      </div>
-      <!-- Start Navbar -->
-      <nav>
-        <ul class="navbar">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="landing.html">Jobbörse</a></li>
-          <li><a href="overview.html">Bewerber</a></li>
-          <li class="d-md-none d-xl-block"><a href="#">Unternehmen</a></li>
-          <li class="d-md-none d-lg-block"><a href="#">Standorte</a></li>
-          <li><a href="#">Über Uns</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <!-- End Navbar -->
+      </div>     
     </div>
   </header>
   <!-- End Header -->
+
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg background-gray">
+    <div class="container mynav">
+      <ul class="navbar-nav ">
+        <li class="nav-item active"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown position-static">
+            <a href="#" class="dropdown-toggle custom-link" data-toggle="dropdown" aria-expanded="true">Jobbörse</a>
+          <ul class="dropdown-menu w-100">
+            <li class="dropdown-item">
+              <div class="container">
+                <div id="accordion-menu" class="accordion">
+                  <div class="row py-3">
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <h3 id="headingOne">
+                        <img src="imgs/svgToFont/content.svg" alt="">
+                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Gebäudereinigung</span>
+                      </h3>
+                      <ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-menu">
+                        <li class="list-item">Unterhaltsreinigung</li>
+                        <li class="list-item">Grundreinigung</li>
+                        <li class="list-item">Büroreinigung</li>
+                        <li class="list-item">Teppichreinigung</li>
+                        <li class="list-item">Sanitärreinigung</li>
+                        <li class="list-item">Glasreinigung gewerblich</li>
+                        <li class="list-item">Fassadenreinigung</li>
+                        <li class="list-item">Glasreinigung privat</li>
+                        <li class="list-item">Hygienereinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <ul class="hide-xs">
+                        <li class="list-item">Dachrinnenreinigung</li>
+                        <li class="list-item">Reinraumreinigung</li>
+                        <li class="list-item">Baureinigung</li>
+                        <li class="list-item">Containerreinigung</li>
+                        <li class="list-item">Verkehrsmittelreinigung</li>
+                      </ul>
+                      <h3 id="headingTwo">
+                        <img src="imgs/svgToFont/vr-controller.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Hotelservice</span>
+                      </h3>
+
+                      <ul id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-menu">
+                        <li class="list-item">Housekeeping</li>
+                        <li class="list-item">Zimmerreinigung</li>
+                        <li class="list-item">Teppichreinigung</li>
+                        <li class="list-item">Hygienereinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <ul class="hide-xs">
+                        <li class="list-item">Küchenreinigung</li>
+                        <li class="list-item">Spüldienste</li>
+                        <li class="list-item">Abluftanlagenreinigung</li>
+                        <li class="list-item">Außenreinigung</li>
+                        <li class="list-item">Dachrinnenreinigung</li>
+                      </ul>
+                      <h3 id="headingThree">
+                        <img src="imgs/svgToFont/drone2.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Außenanlagen</span>
+                      </h3>
+                      <ul  id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-menu">
+                        <li class="list-item">Winterdienst</li>
+                        <li class="list-item">Straßenreinigung</li>
+                        <li class="list-item">Grünanlagenpflege</li>
+                        <li class="list-item">Solaranlagenreinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <h3 id="headingFour">
+                        <img src="imgs/svgToFont/cyborg2.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Instandhaltung</span>
+                      </h3>
+                      <ul id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-menu"> 
+                        <li class="list-item">Abluftanlagenreinigung</li>
+                        <li class="list-item">Maschinenreinigung</li>
+                        <li class="list-item">Rolltreppenreinigung</li>
+                        <li class="list-item">Trockeneisreinigung</li>
+                        <li class="list-item">Trockendampfreinigung</li>
+                      </ul>
+                      <h3>
+                        <img src="imgs/svgToFont/artificial-intelligence.svg" alt="">
+                        Tatortreinigung
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="landing.html">Bewerber</a></li>
+        <li class="nav-item d-md-none d-lg-block"><a href="overview.html">Unternehmen</a></li>
+        <li class="nav-item d-sm-none d-md-block"><a href="#">Standorte</a></li>
+        <li class="nav-item"><a href="#">Über Uns</a></li>
+        <li class="nav-item"><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- End Navbar -->
 
   <!-- Start showcase -->
   <section class="showcase">
@@ -319,7 +411,6 @@
         <button class="btn btn-bg-light show">
           Show 6 More
           <i class="icon-right-arrow"></i>
-          <div class="bg-light"></div>
         </button>
       </div>
     </div>
@@ -581,7 +672,7 @@
             <a href="#" class="btn box-link">
               Continue Reading
               <i class="icon-right-arrow"></i>
-              <div class="bg-light"></div>
+              <div class="light-background"></div>
             </a>
           </div>
           <div class="box">
@@ -600,7 +691,7 @@
             <a href="#" class="btn box-link">
               Continue Reading
               <i class="icon-right-arrow"></i>
-              <div class="bg-light"></div>
+              <div class="light-background"></div>
             </a>
           </div>
           <div class="box">
@@ -619,7 +710,7 @@
             <a href="#" class="btn box-link">
               Continue Reading
               <i class="icon-right-arrow"></i>
-              <div class="bg-light"></div>
+              <div class="light-background"></div>
             </a>
           </div>
         </div>

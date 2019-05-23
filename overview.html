@@ -21,9 +21,11 @@
     <div class="container">
       <div class="top-header">
         <div class="logo">
-          <img src="imgs/rahmer_logo.png" alt="" />
+          <a href="index.html">
+            <img src="imgs/rahmer_logo.png" alt="" />
+          </a>
         </div>
-        
+
         <div class="header-info">
           <div class="call">
             <i class="icon-phone"></i>
@@ -60,30 +62,119 @@
             <i class="icon-zoom"></i>
             <input type="search" placeholder="Suche" />
           </div>
-          <div class="burgor">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="the-button burgor">
+            <span class="the-line"></span>
+            <span class="the-line"></span>
+            <span class="the-line"></span>
           </div>
         </div>
       </div>
-      <!-- Start Navbar -->
-      <nav>
-        <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="landing.html">Jobbörse</a></li>
-          <li class="active"><a href="overview.html">Bewerber</a></li>
-          <li class="d-md-none d-xl-block"><a href="#">Unternehmen</a></li>
-          <li class="d-md-none d-lg-block"><a href="#">Standorte</a></li>
-          <li><a href="#">Über Uns</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <!-- End Navbar -->
     </div>
   </header>
   <!-- End Header -->
 
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg overview">
+    <div class="container mynav">
+      <ul class="navbar-nav ">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown position-static">
+            <a href="#" class="dropdown-toggle custom-link" data-toggle="dropdown" aria-expanded="true">Jobbörse</a>
+          <ul class="dropdown-menu w-100">
+            <li class="dropdown-item">
+              <div class="container">
+                <div id="accordion-menu" class="accordion">
+                  <div class="row py-3">
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <h3 id="headingOne">
+                        <img src="imgs/svgToFont/content.svg" alt="">
+                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Gebäudereinigung</span>
+                      </h3>
+                      <ul id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-menu">
+                        <li class="list-item">Unterhaltsreinigung</li>
+                        <li class="list-item">Grundreinigung</li>
+                        <li class="list-item">Büroreinigung</li>
+                        <li class="list-item">Teppichreinigung</li>
+                        <li class="list-item">Sanitärreinigung</li>
+                        <li class="list-item">Glasreinigung gewerblich</li>
+                        <li class="list-item">Fassadenreinigung</li>
+                        <li class="list-item">Glasreinigung privat</li>
+                        <li class="list-item">Hygienereinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <ul class="hide-xs">
+                        <li class="list-item">Dachrinnenreinigung</li>
+                        <li class="list-item">Reinraumreinigung</li>
+                        <li class="list-item">Baureinigung</li>
+                        <li class="list-item">Containerreinigung</li>
+                        <li class="list-item">Verkehrsmittelreinigung</li>
+                      </ul>
+                      <h3 id="headingTwo">
+                        <img src="imgs/svgToFont/vr-controller.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Hotelservice</span>
+                      </h3>
+
+                      <ul id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-menu">
+                        <li class="list-item">Housekeeping</li>
+                        <li class="list-item">Zimmerreinigung</li>
+                        <li class="list-item">Teppichreinigung</li>
+                        <li class="list-item">Hygienereinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <ul class="hide-xs">
+                        <li class="list-item">Küchenreinigung</li>
+                        <li class="list-item">Spüldienste</li>
+                        <li class="list-item">Abluftanlagenreinigung</li>
+                        <li class="list-item">Außenreinigung</li>
+                        <li class="list-item">Dachrinnenreinigung</li>
+                      </ul>
+                      <h3 id="headingThree">
+                        <img src="imgs/svgToFont/drone2.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Außenanlagen</span>
+                      </h3>
+                      <ul  id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-menu">
+                        <li class="list-item">Winterdienst</li>
+                        <li class="list-item">Straßenreinigung</li>
+                        <li class="list-item">Grünanlagenpflege</li>
+                        <li class="list-item">Solaranlagenreinigung</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 pb-2">
+                      <h3 id="headingFour">
+                        <img src="imgs/svgToFont/cyborg2.svg" alt="">
+                        <span class=" collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Instandhaltung</span>
+                      </h3>
+                      <ul id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-menu"> 
+                        <li class="list-item">Abluftanlagenreinigung</li>
+                        <li class="list-item">Maschinenreinigung</li>
+                        <li class="list-item">Rolltreppenreinigung</li>
+                        <li class="list-item">Trockeneisreinigung</li>
+                        <li class="list-item">Trockendampfreinigung</li>
+                      </ul>
+                      <h3>
+                        <img src="imgs/svgToFont/artificial-intelligence.svg" alt="">
+                        Tatortreinigung
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="landing.html">Bewerber</a></li>
+        <li class="nav-item active"><a href="overview.html
+          ">Unternehmen</a></li>
+        <li class="nav-item d-sm-none d-md-block"><a href="#">Standorte</a></li>
+        <li class="nav-item d-md-none d-lg-block"><a href="#">Über Uns</a></li>
+        <li class="nav-item d-md-none d-lg-block"><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
   <!-- Start showcase -->
   <section class="showcase overview landing">
     <div class="container">
@@ -99,7 +190,8 @@
               Für <br>
               Unternehmen
             </h1>
-            <p class="text">Ihr Unternehmen muss schnell und flexibel reagieren? Wir von RAHMER Zeitarbeit stehen Ihnen zur Seite – schnell professionell, fair und flexibel reagieren!</p>
+            <p class="text">Ihr Unternehmen muss schnell und flexibel reagieren? Wir von RAHMER Zeitarbeit stehen Ihnen
+              zur Seite – schnell professionell, fair und flexibel reagieren!</p>
             <button class="btn">
               Jetzt gleich anfragen!
               <i class="icon-right-arrow"></i>
@@ -134,7 +226,7 @@
                 Arbeitnehmeüberlassung
                 <i class="icon-right-arrow"></i>
               </button>
-            </td>       
+            </td>
           </tr>
           <tr>
             <td>
@@ -154,7 +246,7 @@
                 Onsite Management
                 <i class="icon-right-arrow"></i>
               </button>
-            </td>       
+            </td>
           </tr>
           <tr>
             <td>
@@ -174,7 +266,7 @@
                 Referenzen
                 <i class="icon-right-arrow"></i>
               </button>
-            </td>       
+            </td>
           </tr>
         </tbody>
       </table>
@@ -264,55 +356,55 @@
 
   <!-- Start Features -->
   <section class="features landing overview">
-      <div class="container">
-        <div class="feat">
-          <h2>
-            Ihre Vorteile als <br />
-            Kunde
-          </h2>
-          <p>
-            Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-            Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-            Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-            unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-            mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-            ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-            Renten.
-          </p>
-        </div>
-  
-        <div class="feat">
-          <h2>
-            Verantwortvolle <br />
-            Zeitarbeit
-          </h2>
-          <p>
-              Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-              Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-              Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-              unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-              mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-              ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-              Renten.
-          </p>
-        </div>
-  
-        <div class="feat">
-          <h2>
-            Ihre Vorteile als <br />
-            Mitarbeiter
-          </h2>
-          <p>
-              Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
-              Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
-              Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
-              unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
-              mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
-              ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
-              Renten.
-          </p>
-        </div>
+    <div class="container">
+      <div class="feat">
+        <h2>
+          Ihre Vorteile als <br />
+          Kunde
+        </h2>
+        <p>
+          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+          Renten.
+        </p>
       </div>
+
+      <div class="feat">
+        <h2>
+          Verantwortvolle <br />
+          Zeitarbeit
+        </h2>
+        <p>
+          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+          Renten.
+        </p>
+      </div>
+
+      <div class="feat">
+        <h2>
+          Ihre Vorteile als <br />
+          Mitarbeiter
+        </h2>
+        <p>
+          Sie sind Befänger*in, Facheiter*in, kaufmänsche Fachkraft oder
+          Wier*in? Überlsen Sie Ihre Jobsuche uns, wir finden den richtigen
+          Job für Sie, ob in der Zeitarbeit mit Option auf Übernahme durch
+          unseren Kunden oder durch Direktlung in ein Unteehmen. Sie schließen
+          mit uns einen Arbeirag auf Grundlage des BAPTages und genießen vom
+          ersten Tag an alle gesetzlich gerelten Vorteile eines Arbehäis wie
+          Renten.
+        </p>
+      </div>
+    </div>
   </section>
   <!-- End Features -->
 
@@ -327,27 +419,27 @@
             <form action="" class="form">
               <div class="form-group form-style">
                 <label for="">Firma</label>
-                <input type="text" name="fname" class="form-control" >
+                <input type="text" name="fname" class="form-control">
               </div>
 
               <div class="form-group form-style">
                 <label for="">Vorname</label>
-                <input type="text" name="lname" class="form-control" >
+                <input type="text" name="lname" class="form-control">
               </div>
 
               <div class="form-group form-style">
                 <label for="">Name</label>
-                <input type="text" name="fullname" class="form-control" >
+                <input type="text" name="fullname" class="form-control">
               </div>
 
               <div class="form-group form-style">
                 <label for="">Telefon</label>
-                <input type="text" name="phone" class="form-control" >
+                <input type="text" name="phone" class="form-control">
               </div>
 
               <div class="form-group form-style">
                 <label for="">E-Mail</label>
-                <input type="email" name="email" class="form-control" >
+                <input type="email" name="email" class="form-control">
               </div>
 
               <div class="form-group form-style">
@@ -356,17 +448,20 @@
               </div>
 
               <div class="form-group">
-                <input type="checkbox" name="" id="text1"> 
-                <label for="text1" class="label-check">Ja, ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert werden. Ich erkläre mich mit der Zusendung von E-Mails und/ oder telefonische Kontaktaufnahme bei Angabe der entsprechenden Daten im Kontaktformular einverstanden.</label>
+                <input type="checkbox" name="" id="text1">
+                <label for="text1" class="label-check">Ja, ich stimme zu, dass meine Daten zur Bearbeitung meiner
+                  Anfrage gespeichert werden. Ich erkläre mich mit der Zusendung von E-Mails und/ oder telefonische
+                  Kontaktaufnahme bei Angabe der entsprechenden Daten im Kontaktformular einverstanden.</label>
               </div>
               <div class="form-group">
-                <input type="checkbox" name="" id="text2"> 
-                <label for="text2" class="label-check">Ja, ich habe die Datenschutzerklärung gelesen und akzeptiert.</label>              
+                <input type="checkbox" name="" id="text2">
+                <label for="text2" class="label-check">Ja, ich habe die Datenschutzerklärung gelesen und
+                  akzeptiert.</label>
               </div>
               <button type="submit" class="btn">
-                  Senden <i class="icon-right-arrow"></i> 
+                Senden <i class="icon-right-arrow"></i>
               </button>
-              
+
             </form>
           </div>
         </div>
@@ -383,11 +478,11 @@
                 Geschäftsleitung
               </li>
               <li>
-                  <i class="icon-email"></i>
+                <i class="icon-email"></i>
                 mp@rahmer.de
               </li>
               <li>
-                  <i class="icon-phone"></i>
+                <i class="icon-phone"></i>
                 0911 4247 400
               </li>
             </ul>
