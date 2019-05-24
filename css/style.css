@@ -437,9 +437,7 @@ nav.navbar .nav-item a:hover {
     border: 0;
   }
   nav .dropdown.show .custom-link:after {
-    font-family: fontello;
     content: "\e802";
-    float: right;
     border: 0;
   }
 }
@@ -504,15 +502,17 @@ nav .dropdown-item h3 img {
 @media (max-width: 767px) {
   nav .dropdown-item h3 span {
     cursor: pointer;
+    width: 92%;
+    display: inline-block;
   }
   nav .dropdown-item h3 span:after {
     font-family: fontello;
-    content: "\e80f";
+    content: "\e802";
     float: right;
   }
   nav .dropdown-item h3 span.collapsed::after {
     font-family: fontello;
-    content: "\e802";
+    content: "\e80f";
   }
 }
 
