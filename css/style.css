@@ -459,6 +459,18 @@ nav .dropdown .dropdown-menu {
   top: 95%;
 }
 
+nav .dropdown .dropdown-menu.show {
+  -webkit-box-shadow: 0 100vh 0 100vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 100vh 0 100vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  nav .dropdown .dropdown-menu.show {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 @media (max-width: 767px) {
   nav .dropdown .dropdown-menu {
     padding-top: 10px;
