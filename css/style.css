@@ -347,12 +347,6 @@ nav.navbar .container.mynav {
 }
 
 @media (max-width: 767px) {
-  nav.navbar .container.mynav {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 767px) {
   nav.navbar {
     display: none;
   }
@@ -367,7 +361,6 @@ nav.navbar .container.mynav {
 @media (max-width: 767px) {
   nav.navbar .navbar-nav {
     width: 100%;
-    padding-top: 15px;
   }
 }
 
@@ -385,15 +378,19 @@ nav.navbar .nav-item {
   border-top: 4px solid transparent;
 }
 
+@media (max-width: 767px) {
+  nav.navbar .nav-item {
+    padding: 0 20px;
+  }
+}
+
 nav.navbar .nav-item.active {
   border-top: 4px solid #d4007a;
-  background-color: #fafafa;
 }
 
 @media (max-width: 767px) {
   nav.navbar .nav-item.active {
     border: none;
-    background-color: transparent;
   }
 }
 
@@ -468,12 +465,13 @@ nav .dropdown .dropdown-menu.show {
   nav .dropdown .dropdown-menu.show {
     -webkit-box-shadow: none;
             box-shadow: none;
+    background-color: #fcfcfc;
   }
 }
 
 @media (max-width: 767px) {
   nav .dropdown .dropdown-menu {
-    padding-top: 10px;
+    padding: 0;
     border: 0;
   }
 }
@@ -492,6 +490,9 @@ nav .dropdown .dropdown-menu.show {
   nav .dropdown-item .col-md-6 {
     padding-right: 0;
   }
+  nav .dropdown-item.active, nav .dropdown-item:active, nav .dropdown-item:hover, nav .dropdown-item:focus {
+    background-color: #fcfcfc !important;
+  }
 }
 
 nav .dropdown-item.active, nav .dropdown-item:active, nav .dropdown-item:hover, nav .dropdown-item:focus {
@@ -507,6 +508,10 @@ nav .dropdown-item h3 {
   margin-bottom: 20px;
 }
 
+nav .dropdown-item h3.last-heading {
+  margin-bottom: 0;
+}
+
 nav .dropdown-item h3 img {
   margin-right: 8px;
 }
@@ -514,7 +519,7 @@ nav .dropdown-item h3 img {
 @media (max-width: 767px) {
   nav .dropdown-item h3 span {
     cursor: pointer;
-    width: 92%;
+    width: calc(100% - 36px);
     display: inline-block;
   }
   nav .dropdown-item h3 span:after {
@@ -2599,6 +2604,21 @@ footer .navbar li a {
 header.landing,
 .navbar.landing {
   background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navbar.landing .dropdown .dropdown-menu.show {
+    background-color: #fff !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar.landing .dropdown-item.active, .navbar.landing .dropdown-item:active, .navbar.landing .dropdown-item:hover, .navbar.landing .dropdown-item:focus {
+    background-color: #fff !important;
+  }
+  .navbar.landing .dropdown-item.active, .navbar.landing .dropdown-item:active, .navbar.landing .dropdown-item:hover, .navbar.landing .dropdown-item:focus {
+    background-color: #fcfcfc;
+  }
 }
 
 .showcase.landing {

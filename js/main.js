@@ -182,10 +182,12 @@ $(function() {
   );
 
   // dropdown
+  /*
   $(".navbar-nav li .dropdown-toggle").on("click", function() {
     $("header").toggleClass("background-gray");
     $(".navbar").toggleClass("background-gray");
   });
+  */
   /*
   $(".landing .navbar-nav li, .overview .navbar-nav li").on(
     "click",
