@@ -131,11 +131,15 @@ $(function() {
   });
 
   // add class active on link in navbar when click on it
-  $(".navbar li").on("click", function() {
+  $(".navbar li, .unshilled .unshilled-content ul li").on("click", function() {
     $(this)
       .addClass("active")
       .siblings()
       .removeClass("active");
+  });
+
+  $("header .top-header .header-info .search i").click(function() {
+    $(".showcase .showcase-details .form input[type='search']").focus();
   });
 
   // add class active on link in navbar when click on it
@@ -180,35 +184,4 @@ $(function() {
         );
     }
   );
-
-  // dropdown
-  /*
-  $(".navbar-nav li .dropdown-toggle").on("click", function() {
-    $("header").toggleClass("background-gray");
-    $(".navbar").toggleClass("background-gray");
-  });
-  */
-  /*
-  $(".landing .navbar-nav li, .overview .navbar-nav li").on(
-    "click",
-    function() {
-      $(".navbar").css("background-color", "#fff");
-    }
-  );
-  */
-
-  /*
-  $(".navbar-nav .dropdown").hover(
-    function() {
-      $(".dropdown-menu").slideToggle(400);
-      $("header").css("background-color", "#fff");
-      $(".navbar").css("background-color", "#fff");
-    },
-    function() {
-      $(".dropdown-menu").slideToggle(400);
-      $("header").css("background-color", "#fff");
-      $(".navbar").css("background-color", "#fff");
-    }
-  );
-  */
 });
