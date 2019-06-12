@@ -433,7 +433,7 @@ nav.navbar .nav-item.active a {
 }
 
 nav.navbar .nav-item a {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
   color: #4a4a4a;
@@ -2363,7 +2363,7 @@ footer .footer-left {
 }
 
 footer .footer-left h2 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 32px;
   line-height: 46px;
   color: #303030;
@@ -2640,7 +2640,7 @@ footer .navbar li {
 }
 
 footer .navbar li a {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
