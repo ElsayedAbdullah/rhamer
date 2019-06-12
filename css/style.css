@@ -1155,6 +1155,7 @@ nav .dropdown-item ul .list-item {
 
 .bewerber .bewerber-img .colored-line .two {
   background-color: #d4007a;
+  margin-left: -3px;
 }
 
 .bewerber .bewerber-content {
@@ -1319,6 +1320,10 @@ nav .dropdown-item ul .list-item {
 
 .unternehmen .unternehmen-img .colored-line .two {
   background-color: #d4007a;
+}
+
+.unternehmen .unternehmen-img .colored-line .one {
+  margin-right: -4px;
 }
 
 .unternehmen .unternehmen-content {
@@ -3507,5 +3512,36 @@ header.landing,
             justify-content: space-between;
     width: 100%;
   }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 /*# sourceMappingURL=style.css.map */
