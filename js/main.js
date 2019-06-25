@@ -119,11 +119,16 @@ $(function() {
   });
 
   // burgor button change shape to x button
-  $(function() {
-    $(".the-button").on("click", function() {
-      $(this).toggleClass("transformed");
-    });
+  $(".the-button").on("click", function() {
+    $("html,body").toggleClass("overlay");
+    $(this).toggleClass("transformed");
   });
+
+  if ($(window).width() > 1000) {
+    $(".dropdown-toggle").on("click", function() {
+      $("html,body").toggleClass("overlay");
+    });
+  }
 
   // to avoid close dropdown when click inside it
   $(document).on("click", ".dropdown-menu", function(e) {

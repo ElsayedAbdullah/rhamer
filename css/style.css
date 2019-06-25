@@ -24,6 +24,25 @@ body [contenteditable].form-control:focus {
           box-shadow: none;
 }
 
+@media (min-width: 992px) {
+  html.overlay {
+    overflow: hidden;
+  }
+}
+
+body.overlay:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(9, 6, 26, 0.4);
+  z-index: 3;
+  margin: 0;
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -105,6 +124,8 @@ a {
 
 header {
   padding-bottom: 25px;
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 767px) {
@@ -364,6 +385,19 @@ header .top-header .header-info .search input::placeholder {
 
 /* End Header */
 /* Start Navbar */
+nav {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  nav {
+    position: absolute !important;
+    z-index: 9999;
+    width: 100%;
+  }
+}
+
 nav.navbar {
   padding: 0;
 }
@@ -440,6 +474,8 @@ nav.navbar .nav-item a {
   text-decoration: none;
   padding: 25px;
   display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 767px) {
@@ -451,6 +487,7 @@ nav.navbar .nav-item a {
 
 nav.navbar .nav-item a:hover {
   text-decoration: none;
+  color: #d4007a;
 }
 
 @media (max-width: 767px) {
@@ -1454,7 +1491,7 @@ nav .dropdown-item ul .list-item {
 .slider .owl-theme .owl-dots button.owl-prev span,
 .slider .owl-theme .owl-nav button.owl-prev span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .slider .owl-theme .owl-dots button.owl-next,
@@ -1472,7 +1509,7 @@ nav .dropdown-item ul .list-item {
 .slider .owl-theme .owl-dots button.owl-next span,
 .slider .owl-theme .owl-nav button.owl-next span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .slider .owl-theme .owl-nav [class*="owl-"] {
@@ -1936,7 +1973,7 @@ nav .dropdown-item ul .list-item {
 .unshilled .unshilled-content .unshilled-slider .slider-container .owl-theme .owl-dots button.owl-prev span,
 .unshilled .unshilled-content .unshilled-slider .slider-container .owl-theme .owl-nav button.owl-prev span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .unshilled .unshilled-content .unshilled-slider .slider-container .owl-theme .owl-dots button.owl-next,
@@ -1954,7 +1991,7 @@ nav .dropdown-item ul .list-item {
 .unshilled .unshilled-content .unshilled-slider .slider-container .owl-theme .owl-dots button.owl-next span,
 .unshilled .unshilled-content .unshilled-slider .slider-container .owl-theme .owl-nav button.owl-next span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 @media (max-width: 767px) {
@@ -2195,7 +2232,7 @@ nav .dropdown-item ul .list-item {
 .latest .boxes .owl-theme .owl-dots button.owl-prev span,
 .latest .boxes .owl-theme .owl-nav button.owl-prev span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .latest .boxes .owl-theme .owl-dots button.owl-next,
@@ -2213,7 +2250,7 @@ nav .dropdown-item ul .list-item {
 .latest .boxes .owl-theme .owl-dots button.owl-next span,
 .latest .boxes .owl-theme .owl-nav button.owl-next span {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 @media (max-width: 767px) {
