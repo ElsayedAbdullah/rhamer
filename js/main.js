@@ -13,7 +13,7 @@ $(function() {
         dots: true,
         nav: false,
         margin: 20,
-        stagePadding: 10
+        stagePadding: 0
       },
       768: {
         items: 2,
@@ -84,7 +84,8 @@ $(function() {
     navRewind: false,
     responsive: {
       0: {
-        items: 3
+        items: 3,
+        stagePadding: 0
       },
       500: {
         items: 3

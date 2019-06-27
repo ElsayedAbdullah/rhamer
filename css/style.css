@@ -1474,6 +1474,9 @@ nav .dropdown-item ul .list-item {
     padding-bottom: 55px;
     padding-top: 110px;
   }
+  .slider .container {
+    padding-right: 0;
+  }
 }
 
 .slider .owl-theme .owl-dots button.owl-prev,
@@ -2030,6 +2033,9 @@ nav .dropdown-item ul .list-item {
 @media (max-width: 767px) {
   .latest {
     padding: 0;
+  }
+  .latest .container {
+    padding-right: 0;
   }
 }
 
