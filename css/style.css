@@ -633,11 +633,16 @@ nav .dropdown-item ul {
   }
 }
 
-nav .dropdown-item ul .list-item {
-  font-family: "Source Sans Pro";
-  font-size: 16px;
-  color: #4a4a4a;
-  padding-bottom: 15px;
+nav .dropdown-item ul .list-item a {
+  font-family: "Source Sans Pro" !important;
+  font-size: 16px !important;
+  padding: 0 0 15px !important;
+  text-decoration: none;
+  color: #4a4a4a !important;
+}
+
+nav .dropdown-item ul .list-item a:hover {
+  color: #d4007a !important;
 }
 
 /* End Navbar */
