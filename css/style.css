@@ -24,10 +24,8 @@ body [contenteditable].form-control:focus {
           box-shadow: none;
 }
 
-@media (min-width: 992px) {
-  html.overlay {
-    overflow: hidden;
-  }
+html.overlay {
+  overflow: hidden;
 }
 
 body.overlay:after {
@@ -639,6 +637,7 @@ nav .dropdown-item ul .list-item a {
   padding: 0 0 15px !important;
   text-decoration: none;
   color: #4a4a4a !important;
+  text-transform: capitalize;
 }
 
 nav .dropdown-item ul .list-item a:hover {

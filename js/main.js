@@ -114,22 +114,12 @@ $(function() {
     }
   });
 
-  // burgor button
-  $(".top-header .burgor").on("click", function() {
-    $(".navbar").slideToggle(500);
-  });
-
   // burgor button change shape to x button
   $(".the-button").on("click", function() {
     $("html,body").toggleClass("overlay");
     $(this).toggleClass("transformed");
+    $(".navbar").slideToggle(500);
   });
-
-  if ($(window).width() > 1000) {
-    $(".dropdown-toggle").on("click", function() {
-      $("html,body").toggleClass("overlay");
-    });
-  }
 
   // to avoid close dropdown when click inside it
   $(document).on("click", ".dropdown-menu", function(e) {
